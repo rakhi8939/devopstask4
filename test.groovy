@@ -9,6 +9,8 @@ job("task6_job1"){
   	}
         steps {
         shell('''sudo cp -rvf * /root/task
+        sudo scp -r /root/task3/*.html docker@192.168.99.102:/docker/home/httpd
+        sudo scp -r /root/task3/*.php docker@192.168.99.102:/docker/home/php
         ''')
       }
 }
