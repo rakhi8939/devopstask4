@@ -56,3 +56,4 @@ spec:
       nodePort: 32146
       protocol: TCP
   selector:
+       app: php-webserver
